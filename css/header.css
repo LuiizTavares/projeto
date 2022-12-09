@@ -1,0 +1,58 @@
+.info-bg {
+  display: block;
+  height: 40px;
+  background-color: #192945;
+}
+
+.info-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: end;
+}
+
+.info-menu a {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.info-menu li:not(:last-child) {
+  border-right: 1px solid #ffff;
+  padding-right: 20px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header-menu a {
+  color: #2a2146;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.header-menu a.header-botao {
+  color: #ffffff;
+  background-color: #4688f2;
+  padding: 15px;
+  border-radius: 25px;
+}
