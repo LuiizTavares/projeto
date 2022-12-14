@@ -35,6 +35,10 @@
   padding-bottom: 20px;
 }
 
+.header ul {
+  list-style: none;
+}
+
 .header-menu {
   display: flex;
   flex-wrap: wrap;
@@ -55,4 +59,18 @@
   background-color: #4688f2;
   padding: 15px;
   border-radius: 25px;
+}
+
+.castelo {
+  display: block;
+  background-image: url(../img/Vilarejo.png);
+  width: auto;
+  height: 600px;
+  margin: auto;
+}
+
+.pesquisa-bg {
+  height: 130px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }

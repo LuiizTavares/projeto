@@ -1,0 +1,62 @@
+.titulo-pacote {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 85px;
+  padding-bottom: 55px;
+  place-content: center;
+  position: relative;
+}
+
+.titulo-pacote::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  bottom: 40px;
+  background-color: #4688f2;
+  position: absolute;
+}
+
+.pacotes {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  width: 100%;
+}
+
+.pacotes img {
+  border-radius: 4px 4px 0 0;
+}
+
+.viagens {
+  display: block;
+  width: 400px;
+  height: 600px;
+}
+
+.viagens-subtitulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.viagens p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400px;
+  padding-bottom: 25px;
+}
+
+.viagens li {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.viagens-conteudo {
+  display: block;
+}
