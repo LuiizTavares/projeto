@@ -26,20 +26,20 @@
   width: 100%;
 }
 
-.pacotes img {
-  border-radius: 4px 4px 0 0;
-}
-
 .viagens {
+  box-sizing: border-box;
   display: block;
   width: 400px;
   height: 600px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .viagens-subtitulo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
+  line-height: 30px;
+  padding-left: 25px;
   padding-top: 25px;
   padding-bottom: 15px;
 }
@@ -48,15 +48,70 @@
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400px;
+  line-height: 20px;
+  height: 70px;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 25px;
+}
+
+.viagens ul {
+  padding-left: 70px;
+  position: relative;
+}
+
+.viagens ul::after {
+  content: "";
+  display: block;
+  width: 345px;
+  height: 0px;
+  border: 1px solid #e5e5e5;
+  position: absolute;
+  bottom: -15px;
+  right: 25px;
+  left: 25px;
 }
 
 .viagens li {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
-  font-weight: 400;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  height: 20px;
 }
 
-.viagens-conteudo {
-  display: block;
+.viagem-preco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.viagem-preco span {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.viagem-preco span:not(:first-child) {
+  color: #4688f2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.viagem-preco::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/icones/localizacao.png);
+  width: 12px;
+  height: 15px;
+  position: absolute;
+  top: 40px;
+  left: 25px;
 }
