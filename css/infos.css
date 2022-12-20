@@ -1,0 +1,30 @@
+.infos-conteudo {
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  gap: 90px;
+}
+
+.infos-gerais {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto 2fr;
+  gap: 14px 22px;
+  align-items: center;
+}
+
+.infos-gerais img {
+  object-fit: contain;
+  aspect-ratio: 70px / 70px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.infos-gerais h3 {
+  font: 600 20px/30px "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.infos-gerais p {
+  font: 400 16px/20px "Poppins", sans-serif;
+}

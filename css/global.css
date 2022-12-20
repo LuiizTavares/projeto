@@ -12,6 +12,7 @@ h4,
 p,
 ul {
   margin: 0px;
+  padding: 0px;
 }
 
 a {
@@ -28,5 +29,4 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  overflow: hidden;
 }
