@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
   <meta name="description" content="Aqui você encontra os melhores destinos, com os melhores preços!">
   <title>Destitech | Home</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+
   <header>
-    <nav class="info-bg">
+    <nav class="info-bg font-inter cor-0">
       <ul class="info-menu container">
         <li><a href="./">tour.support@gmail.com</a></li>
         <li><a href="./">Sobre nós</a></li>
@@ -35,22 +36,43 @@
     <div class="castelo">
 
     </div>
-    <div class="pesquisa-bg container">
-      <form action="">
-
-      </form>
-    </div>
   </header>
 
   <main>
-    <h2 class="titulo-pacote container">Nossos Pacotes</h2>
+    <div class="pesquisa-bg container cor-0">
+      <form class="pesquisa" action="./index.html">
+        <div>
+          <span id="destino-img"></span>
+          <input type="text" id="destino" placeholder="Destino">
+          <img src="./img/icones/seta.png" alt="">
+        </div>
+        <div>
+          <span id="atividade-img"></span>
+          <input type="select" id="atividade" placeholder="Atividade">
+          <img src="./img/icones/seta.png" alt="">
+        </div>
+        <div>
+          <span id="duracao-img"></span>
+          <input type="text" id="duracao" placeholder="Duração">
+          <img src="./img/icones/seta.png" alt="">
+        </div>
+        <div>
+          <span id="consulta-img"></span>
+          <input type="select" id="consulta" placeholder="Consulta">
+          <img src="./img/icones/seta.png" alt="">
+        </div>
+        <button class="botao-pesquisa">Pesquisar</button>
+      </form>
+    </div>
+
+    <h2 class="titulo-pacote container font-h2">Nossos Pacotes</h2>
     <div class="pacotes container">
       <div class="viagens zoom-img">
         <a href="./">
           <img src="./img/Salvador.png" alt="">
-          <h3 class="viagens-subtitulo">Salvador - BA</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh.</p>
-          <ul>
+          <h3 class="viagens-subtitulo font-h3">Salvador - BA</h3>
+          <p class="font-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna tellus, tristique in mi non, volutpat molestie nibh.</p>
+          <ul class="font-xs">
             <li>Cras urna dui</li>
             <li>Scelerisque aliquam felis in</li>
             <li>Aliquet efficitur neque</li>
@@ -58,8 +80,8 @@
             <li>Donec tincidunt nunc nec lorem efficitur iaculi</li>
           </ul>
           <div class="viagem-preco">
-            <span>Brasil</span>
-            <span>R$ 800,00</span>
+            <span class="font-xs">Brasil</span>
+            <span class="cor-2 font-xl">R$ 800,00</span>
           </div>
         </a>
       </div>
@@ -67,9 +89,9 @@
       <div class="viagens zoom-img">
         <a href="./">
           <img src="./img/Angra.png" alt="">
-          <h2 class="viagens-subtitulo">Angra dos Reis - RJ</h2>
-          <p>Sed condimentum justo enim, ut feugiat arcu aliquet id. Praesent auctor leo porta, tempus lacus sed, euismod elit. Ut tristique mollis massa et mattis.</p>
-          <ul>
+          <h3 class="viagens-subtitulo font-h3">Angra dos Reis - RJ</h3>
+          <p class="font-s">Sed condimentum justo enim, ut feugiat arcu aliquet id. Praesent auctor leo porta, tempus lacus sed, euismod elit. Ut tristique mollis massa et mattis.</p>
+          <ul class="font-xs">
             <li>Cras urna dui</li>
             <li>Scelerisque aliquam felis in</li>
             <li>Aliquet efficitur neque</li>
@@ -77,8 +99,8 @@
             <li>Donec tincidunt nunc nec lorem efficitur iaculi</li>
           </ul>
           <div class="viagem-preco">
-            <span>Brasil</span>
-            <span>R$ 640,00</span>
+            <span class="font-xs">Brasil</span>
+            <span class="cor-2 font-xl">R$ 640,00</span>
           </div>
         </a>
       </div>
@@ -86,9 +108,9 @@
       <div class="viagens zoom-img">
         <a href="./">
           <img src="./img/SaoPaulo.png" alt="">
-          <h2 class="viagens-subtitulo">São Paulo - SP</h2>
-          <p>Etiam molestie scelerisque odio, in ultrices metus venenatis a. Phasellus accumsan, nisl ut vulputate consectetur, sapien metus luctus enim, sed interdum nulla est vitae risus.</p>
-          <ul>
+          <h3 class="viagens-subtitulo font-h3">São Paulo - SP</h3>
+          <p class="font-s">Etiam molestie scelerisque odio, in ultrices metus venenatis a. Phasellus accumsan, nisl ut vulputate consectetur, sapien metus luctus enim, sed interdum nulla est vitae risus.</p>
+          <ul class="font-xs">
             <li>Cras urna dui</li>
             <li>Scelerisque aliquam felis in</li>
             <li>Aliquet efficitur neque</li>
@@ -96,8 +118,8 @@
             <li>Donec tincidunt nunc nec lorem efficitur iaculi</li>
           </ul>
           <div class="viagem-preco">
-            <span>Brasil</span>
-            <span>R$ 240,00</span>
+            <span class="font-xs">Brasil</span>
+            <span class="cor-2 font-xl">R$ 240,00</span>
           </div>
         </a>
       </div>
@@ -105,7 +127,7 @@
   </main>
 
   <section aria-label="Nossas Atividades">
-    <h2 class="titulo-atividades container">Nossas Atividades</h2>
+    <h2 class="titulo-atividades container font-h2">Nossas Atividades</h2>
     <div class="atividades-img container">
       <img src="./img/Ativ1.png" alt="Mulher abraçando homem no por do sol">
       <img src="./img/Ativ2.png" alt="Mulher olhando um mapa da cidade">
@@ -117,7 +139,7 @@
   <section aria-label="Contato">
     <div class="contato-bg">
       <div class="contato">
-        <h2>Entre em contato conosco</h2>
+        <h2 class="font-h2">Entre em contato conosco</h2>
         <form class="form" action="./">
           <div class="campo">
             <label for="nome"></label>
@@ -135,7 +157,7 @@
             <label for="mensagem"></label>
             <textarea rows="5" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem (opcional)"></textarea>
           </div>
-          <button class="botao" type="submit" name="submit">Enviar Mensagem</button>
+          <button class="botao cor-0" type="submit" name="submit">Enviar Mensagem</button>
         </form>
       </div>
     </div>
@@ -144,31 +166,31 @@
   <section class="infos-conteudo container" aria-label="Informações">
     <div class="infos-gerais">
       <img src="./img/icones/casa.png" alt="">
-      <h3>Mais de 20 lojas</h3>
-      <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+      <h3 class="font-h3">Mais de 20 lojas</h3>
+      <p class="font-m">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
     </div>
     <div class="infos-gerais">
       <img src="./img/icones/seguranca.png" alt="">
-      <h3>Segurança</h3>
-      <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+      <h3 class="font-h3">Segurança</h3>
+      <p class="font-m">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
     </div>
     <div class="infos-gerais">
       <img src="./img/icones/presente.png" alt="">
-      <h3>Os melhores preços</h3>
-      <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+      <h3 class="font-h3">Os melhores preços</h3>
+      <p class="font-m">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
     </div>
   </section>
 
   <section aria-label="Blog">
-    <h2 class="titulo-blog container">Blog</h2>
+    <h2 class="titulo-blog container font-h2">Blog</h2>
     <div class="blog-conteudo container">
       <div class="blog-cards">
         <a href="./">
           <img src="./img/Besttrip.png" alt="">
           <div class="cards-conteudo">
-            <span>01 de Julho, 2022 | 5 Comentários</span>
-            <h3>The Best Trip</h3>
-            <p>The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
+            <span class="cor-2 font-s">01 de Julho, 2022 | 5 Comentários</span>
+            <h3 class="font-h3">The Best Trip</h3>
+            <p class="font-s">The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
           </div>
         </a>
       </div>
@@ -176,9 +198,9 @@
         <a href="./">
           <img src="./img/Besttrip2.png" alt="">
           <div class="cards-conteudo">
-            <span>20 de Agosto, 2022 | 2 Comentários</span>
-            <h3>The Best Trip</h3>
-            <p>The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
+            <span class="cor-2 font-s">20 de Agosto, 2022 | 2 Comentários</span>
+            <h3 class="font-h3">The Best Trip</h3>
+            <p class="font-s">The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
           </div>
         </a>
       </div>
@@ -186,14 +208,81 @@
         <a href="./">
           <img src="./img/Besttrip3.png" alt="">
           <div class="cards-conteudo">
-            <span>15 de Setembro, 2022 | 1 Comentários</span>
-            <h3>The Best Trip</h3>
-            <p>The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
+            <span class="cor-2 font-s">15 de Setembro, 2022 | 1 Comentários</span>
+            <h3 class="font-h3">The Best Trip</h3>
+            <p class="font-s">The point of using Lorem Ipsum is that it has a more-or-less normal. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
           </div>
       </div>
       </a>
     </div>
   </section>
+
+  <section class="parceiros-bg" aria-label="Patrocinadores">
+    <div class="parceiros container">
+      <a href="./"><img src="./img/marcas/Airtravel.png" alt=""></a>
+      <a href="./"><img src="./img/marcas/Traveling.png" alt=""></a>
+      <a href="./"><img src="./img/marcas/traveling2.png" alt=""></a>
+      <a href="./"><img src="./img/marcas/Travelwave.png" alt=""></a>
+      <a href="./"><img src="./img/marcas/cloudtravel.png" alt=""></a>
+    </div>
+  </section>
+
+  <footer class="footer-bg cor-1">
+    <div class="footer-conteudo container">
+      <div class="footer-ajuda">
+        <h3 class="cor-0 font-h3-b">Precisa de Ajuda?</h3>
+        <ul class="cor-0 font-l">
+          <li>Telefone:<br><a href="tel:+0552112345678">+055 21 1234-5678</a></li>
+          <li>Email:<br><a href="mailto:info@ecample.com">info@example.com</a></li>
+          <li>Endereço:<br><span>Botafogo, 232 - Rio de Janeiro</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-infos">
+        <h3 class="cor-0 font-h3-b">Empresa</h3>
+        <ul class="cor-0 font-l">
+          <li><a href="./">Centro de Ajuda</a></li>
+          <li><a href="./">Resgatar Vale</a></li>
+          <li><a href="./">Contato</a></li>
+          <li><a href="./">Denunciar Abuso</a></li>
+          <li><a href="./">Sobre Nós</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-infos">
+        <h3 class="cor-0 font-h3-b">Suporte</h3>
+        <ul class="cor-0 font-l">
+          <li><a href="./">Suporte 24h</a></li>
+          <li><a href="./">Licença</a></li>
+          <li><a href="./">Satisfação</a></li>
+          <li><a href="./">Precisão</a></li>
+          <li><a href="./">Pagamento</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-infos">
+        <h3 class="cor-0 font-h3-b">Nosso Trabalho</h3>
+        <ul class="cor-0 font-l">
+          <li><a href="./">Portifolio</a></li>
+          <li><a href="./">Informações da Conta</a></li>
+          <li><a href="./">Trabalhe Conosco</a></li>
+          <li><a href="./">Politicas e Regras</a></li>
+          <li><a href="./">Encontre Nosso Time</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-final container">
+      <span class="cor-0 font-l">© Copyright 2022</span>
+      <div class="footer-redes">
+        <a class="footer-fb" href="./"></a>
+        <a class="footer-tt" href="./"></a>
+        <a class="footer-yt" href="./"></a>
+        <a class="footer-ig" href="./"></a>
+        <a class="footer-lk" href="./"></a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

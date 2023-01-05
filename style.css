@@ -5,6 +5,9 @@
 @import "./css/contato.css";
 @import "./css/infos.css";
 @import "./css/blog.css";
+@import "./css/parceiros.css";
+@import "./css/footer.css";
 
 /* Utilidades */
 @import "./css/utilidades/componentes.css";
+@import "./css/utilidades/utilitarios.css";

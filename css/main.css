@@ -1,9 +1,106 @@
+/* Menu de Pesquisa */
+
+.pesquisa-bg {
+  box-sizing: border-box;
+  margin-top: -50px;
+  height: 130px;
+  background-color: var(--cor-0);
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 4;
+}
+
+.pesquisa {
+  display: flex;
+  gap: 0 20px;
+  padding: 35px;
+}
+
+.pesquisa input[type="text"],
+input[type="select"] {
+  width: 230px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+.pesquisa ::placeholder {
+  font: 500 16px/24px "Poppins", sans-serif;
+  color: #707070;
+  padding-left: 55px;
+}
+
+.botao-pesquisa {
+  font: 600 16px/24px "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: var(--cor-0);
+  background-color: var(--cor-primaria);
+  width: 240px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao-pesquisa:hover {
+  background-color: var(--cor-secundaria);
+}
+
+#destino-img {
+  background-image: url(../img/icones/mapa.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 18px;
+  margin-left: 19px;
+  position: absolute;
+}
+
+#atividade-img {
+  background-image: url(../img/icones/pessoa.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 18px;
+  margin-left: 16px;
+  position: absolute;
+}
+
+#duracao-img {
+  background-image: url(../img/icones/calendario.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 18px;
+  margin-left: 16px;
+  position: absolute;
+}
+
+#consulta-img {
+  background-image: url(../img/icones/dinheiro.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 18px;
+  margin-left: 23px;
+  position: absolute;
+}
+
+.pesquisa img {
+  padding-left: 205px;
+  margin-top: -35px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* Nossos Pacotes */
+
 .titulo-pacote {
   display: flex;
   flex-wrap: wrap;
-  font-family: "Poppins", sans-serif;
-  font-size: 36px;
-  font-weight: 600;
   text-transform: uppercase;
   padding-top: 85px;
   padding-bottom: 55px;
@@ -17,7 +114,7 @@
   width: 45px;
   height: 3px;
   bottom: 40px;
-  background-color: #4688f2;
+  background-color: var(--cor-secundaria);
   position: absolute;
 }
 
@@ -25,31 +122,48 @@
   display: grid;
   grid-template-columns: 1fr 1fr auto;
   gap: 60px;
+  position: relative;
+}
+
+.pacotes::after {
+  content: "";
+  display: block;
+  background-image: url(../img/icones/seta_maior.png);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 1320px;
+  top: 260px;
+  cursor: pointer;
+}
+
+.pacotes::before {
+  content: "";
+  display: block;
+  background-image: url(../img/icones/setaesq.png);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 1320px;
+  top: 260px;
+  cursor: pointer;
 }
 
 .viagens {
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: var(--cor-0);
   width: 400px;
   height: 600px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .viagens-subtitulo {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
   padding-left: 25px;
   padding-top: 25px;
   padding-bottom: 15px;
 }
 
 .viagens p {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 400px;
-  line-height: 20px;
   height: 70px;
   padding-left: 25px;
   padding-right: 25px;
@@ -75,9 +189,6 @@
 }
 
 .viagens li {
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  line-height: 18px;
   color: rgba(0, 0, 0, 0.8);
   height: 20px;
 }
@@ -103,20 +214,14 @@
   left: 25px;
 }
 
-.viagem-preco span {
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-}
+/* Exemplo para funcionar sem utilizar classe direta nos spans */
 
-.viagem-preco span:not(:first-child) {
-  color: #4688f2;
+/* .viagem-preco span:not(:first-child) {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
-}
+} */
 
 .zoom-img {
   -moz-transition: all 0.5s;

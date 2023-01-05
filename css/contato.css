@@ -1,11 +1,12 @@
 .contato-bg {
   background-image: url(../img/predios.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  height: 820px;
-  width: 100%;
+  aspect-ratio: 1920 / 820;
 }
 
 .contato {
@@ -13,15 +14,12 @@
   display: block;
   width: 1024px;
   height: 600px;
-  background-color: #ffffff;
+  background-color: var(--cor-0);
 }
 
 .contato h2 {
   display: flex;
   flex-wrap: wrap;
-  font-family: "Poppins", sans-serif;
-  font-size: 36px;
-  font-weight: 600;
   text-transform: uppercase;
   padding-top: 45px;
   padding-bottom: 55px;
@@ -35,7 +33,7 @@
   width: 45px;
   height: 3px;
   bottom: 40px;
-  background-color: #4688f2;
+  background-color: var(--cor-secundaria);
   position: absolute;
 }
 
@@ -73,7 +71,7 @@
 .form input[type="email"]:focus,
 .form input[type="text"]:focus,
 .form textarea:focus {
-  outline-color: #4688f2;
+  outline-color: var(--cor-secundaria);
   padding-left: 12px;
 }
 
@@ -82,11 +80,14 @@
   width: 100%;
   font: 600 20px/30px "Poppins", sans-serif;
   text-transform: uppercase;
-  color: #ffffff;
   border: none;
   border-radius: 4px;
-  background-color: #4688f2;
+  background-color: var(--cor-secundaria);
   padding-top: 20px;
   padding-bottom: 20px;
   cursor: pointer;
+}
+
+.botao:hover {
+  background-color: var(--cor-primaria);
 }

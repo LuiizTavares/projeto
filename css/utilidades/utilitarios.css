@@ -1,0 +1,55 @@
+:root {
+  --cor-0: #ffffff;
+  --cor-primaria: #192945;
+  --cor-secundaria: #4688f2;
+}
+
+.cor-0 {
+  color: var(--cor-0);
+}
+
+.cor-1 {
+  color: var(--cor-primaria);
+}
+.cor-2 {
+  color: var(--cor-secundaria);
+}
+
+/* Fontes */
+
+.font-inter {
+  font: 400 0.875rem/17px "Inter", sans-serif;
+}
+
+.font-h2 {
+  font: 600 2.25rem/54px "Poppins", sans-serif;
+}
+
+.font-h3,
+.font-h3-b {
+  font: 600 1.25rem/30px "Poppins", sans-serif;
+}
+
+.font-h3-b {
+  font-weight: 700;
+}
+
+.font-xs {
+  font: 400 0.75rem/18px "Poppins", sans-serif;
+}
+
+.font-s {
+  font: 400 0.875rem/21px "Poppins", sans-serif;
+}
+
+.font-m {
+  font: 400 1rem/24px "Poppins", sans-serif;
+}
+
+.font-l {
+  font: 500 1.125rem/40px "Poppins", sans-serif;
+}
+
+.font-xl {
+  font: 600 2rem/48px "Poppins", sans-serif;
+}

@@ -21,10 +21,5 @@
 }
 
 .infos-gerais h3 {
-  font: 600 20px/30px "Poppins", sans-serif;
   text-transform: uppercase;
-}
-
-.infos-gerais p {
-  font: 400 16px/20px "Poppins", sans-serif;
 }
