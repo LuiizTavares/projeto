@@ -44,10 +44,7 @@
 
 .header-menu a {
   color: #2a2146;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 24px;
+  font: 600 1rem/24px "Poppins" sans-serif;
   text-transform: uppercase;
   position: relative;
 }
