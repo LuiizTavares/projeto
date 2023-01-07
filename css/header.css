@@ -44,7 +44,7 @@
 
 .header-menu a {
   color: #2a2146;
-  font: 600 1rem/24px "Poppins" sans-serif;
+  font: 600 1rem/24px "Poppins", sans-serif;
   text-transform: uppercase;
   position: relative;
 }
