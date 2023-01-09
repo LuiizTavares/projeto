@@ -12,28 +12,49 @@
 }
 
 .pesquisa {
+  box-sizing: border-box;
   display: flex;
-  gap: 0 20px;
+  gap: 20px;
   padding: 35px;
 }
 
 .pesquisa input[type="text"],
-input[type="select"] {
+select {
+  box-sizing: border-box;
   width: 230px;
   height: 60px;
   border: none;
   border-radius: 5px;
   background-color: #f7f7f7;
+  padding-left: 40px;
 }
 
-.pesquisa ::placeholder {
-  font: 500 16px/24px "Poppins", sans-serif;
+.pesquisa ::placeholder,
+select {
+  font: 500 1rem/24px "Poppins", sans-serif;
   color: #707070;
-  padding-left: 55px;
+  appearance: none;
+}
+
+.pesquisa input[type="text"]:focus {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+select {
+  background-image: url(../img/icones/seta.png);
+  background-repeat: no-repeat;
+  background-position: right 1.75rem center;
+  background-size: 10px 10px;
+}
+
+select:focus {
+  outline: none;
 }
 
 .botao-pesquisa {
-  font: 600 16px/24px "Poppins", sans-serif;
+  font: 600 1rem/24px "Poppins", sans-serif;
   text-transform: uppercase;
   color: var(--cor-0);
   background-color: var(--cor-primaria);
@@ -63,17 +84,17 @@ input[type="select"] {
   width: 24px;
   height: 24px;
   margin-top: 18px;
-  margin-left: 16px;
+  margin-left: 13px;
   position: absolute;
 }
 
 #duracao-img {
   background-image: url(../img/icones/calendario.png);
   background-repeat: no-repeat;
-  width: 24px;
+  width: 22px;
   height: 24px;
-  margin-top: 18px;
-  margin-left: 16px;
+  margin-top: 16px;
+  margin-left: 20px;
   position: absolute;
 }
 
@@ -83,18 +104,18 @@ input[type="select"] {
   width: 24px;
   height: 24px;
   margin-top: 18px;
-  margin-left: 23px;
+  margin-left: 18px;
   position: absolute;
 }
 
-.pesquisa img {
+/* .pesquisa img {
   padding-left: 205px;
   margin-top: -35px;
   width: 10px;
   height: 10px;
   cursor: pointer;
   position: absolute;
-}
+} */
 
 /* Nossos Pacotes */
 
